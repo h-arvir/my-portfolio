@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Harvir - Minimalist Portfolio
 
-## Getting Started
+A clean, minimalist portfolio website built with Next.js and Tailwind CSS, featuring pure black and white design with sophisticated animations and micro-interactions.
 
-First, run the development server:
+## ✨ Features
+
+- **Minimalist Design**: Pure black and white color scheme with clean typography
+- **Smooth Animations**: Sophisticated CSS animations and transitions
+- **Responsive Layout**: Fully responsive design that works on all devices
+- **Interactive Elements**: Hover effects, cursor follower, and micro-interactions
+- **Modern Stack**: Built with Next.js 15, React 19, and Tailwind CSS 4
+- **Performance Optimized**: Fast loading with optimized fonts and images
+- **Accessibility**: Focus states and keyboard navigation support
+
+## 🎨 Design Principles
+
+- **Minimalism**: Clean, uncluttered design with plenty of whitespace
+- **Typography**: Inter font with careful letter-spacing and font weights
+- **Geometric Elements**: Subtle geometric shapes and lines as design accents
+- **Animation**: Smooth, purposeful animations that enhance user experience
+- **Contrast**: Perfect balance between pure white (#FFFFFF) and pure black (#000000)
+
+## 🚀 Getting Started
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3001](http://localhost:3001) with your browser to see the portfolio.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js 15** - React framework for production
+- **React 19** - JavaScript library for building user interfaces
+- **Tailwind CSS 4** - Utility-first CSS framework
+- **Inter Font** - Modern, minimalist typography
+- **CSS Animations** - Custom keyframe animations
+- **Intersection Observer** - Scroll-triggered animations
 
-## Learn More
+## 📱 Sections
 
-To learn more about Next.js, take a look at the following resources:
+1. **Hero** - Introduction with animated name and call-to-action
+2. **About** - Personal information and skills with progress indicators
+3. **Experience** - Learning journey in frontend, cloud, and networking
+4. **Projects** - Portfolio of current and planned projects
+5. **Contact** - Ways to connect and collaborate
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Built with ❤️ by Harvir**

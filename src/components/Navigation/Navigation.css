@@ -1,0 +1,141 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.navigation-container {
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.navigation-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-logo {
+  font-size: 1.25rem;
+  font-weight: 200;
+  letter-spacing: 0.3em;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-logo:hover {
+  transform: scale(1.02);
+}
+
+.navigation-menu {
+  display: none;
+  align-items: center;
+  gap: 4rem;
+}
+
+@media (min-width: 768px) {
+  .navigation-menu {
+    display: flex;
+  }
+}
+
+.navigation-item {
+  position: relative;
+}
+
+.navigation-link {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background: transparent;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.navigation-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #000000;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-link:hover::after {
+  width: 100%;
+}
+
+.navigation-link:focus {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.navigation-link:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.navigation-link-active {
+  font-weight: 500;
+}
+
+.navigation-link-active::after {
+  width: 100%;
+}
+
+.navigation-mobile {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .navigation-mobile {
+    display: none;
+  }
+}
+
+.navigation-mobile-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-mobile-button:hover {
+  transform: scale(1.02);
+}
+
+.navigation-mobile-button:focus {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.navigation-mobile-button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.navigation-mobile-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.navigation-mobile-line {
+  width: 100%;
+  height: 1px;
+  background: #000000;
+}
