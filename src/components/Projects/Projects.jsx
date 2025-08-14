@@ -9,10 +9,10 @@ export default function Projects() {
       title: 'Qna Analysis',
       description: 'A webapp made for last night of a real engineering student\'s study by dumping the previous exam Ques Papers',
       status: 'Live',
-      tech: ['Next.js', 'Tailwind', 'React', 'Vercel'],
+      tech: ['Vite', 'Tailwind', 'React', 'Vercel'],
       links: [
-        { label: 'View', url: 'YOUR_WEBAPP_URL_HERE' },
-        { label: 'Code', url: 'YOUR_GITHUB_REPO_URL_HERE' }
+        { label: 'View', url: 'https://qna-analysis.vercel.app/' },
+        { label: 'Code', url: 'https://github.com/h-arvir/QnA2' }
       ]
     },
     {
