@@ -13,25 +13,25 @@ export default function Hero({ isLoaded, scrollToSection }) {
       </div>
       
       <div className="hero-content">
-        <div className={`hero-content-inner ${isLoaded ? 'animate-fade-in-up' : 'opacity-0'}`}>
-          <h1 className="hero-title">
-            HARVIR
+        <div className="hero-content-inner">
+          <h1 className={`hero-title ${isLoaded ? 'animate-hero-entrance' : ''}`}>
+            harvir
           </h1>
           
-          <div className="hero-divider">
+          <div className={`hero-divider ${isLoaded ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '1.3s' }}>
             <div className="hero-line"></div>
           </div>
           
-          <p className="hero-subtitle">
+          <p className={`hero-subtitle ${isLoaded ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '1.5s' }}>
             Student & Aspiring Developer
           </p>
           
-          <p className="hero-description">
-            Passionate about frontend development, cloud computing with AWS, and networking. 
-            Currently learning and building projects to grow my skills.
+          <p className={`hero-description ${isLoaded ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '1.7s' }}>
+            Decent and exploring further in frontend development, cloud computing with AWS, and networking. <br />
+            Pronouns are he/harcoded.
           </p>
           
-          <div className="hero-buttons">
+          {/* <div className="hero-buttons">
             <button
               onClick={() => scrollToSection('about')}
               className="hero-button-primary group"
@@ -45,7 +45,7 @@ export default function Hero({ isLoaded, scrollToSection }) {
             >
               Get In Touch
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
       

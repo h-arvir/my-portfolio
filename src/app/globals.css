@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none !important;
 }
 
 html {
@@ -133,6 +134,24 @@ body {
   }
 }
 
+@keyframes heroEntrance {
+  0% {
+    opacity: 0;
+    transform: scale(4) translateZ(0);
+    filter: blur(15px);
+  }
+  70% {
+    opacity: 0.8;
+    transform: scale(1.1) translateZ(0);
+    filter: blur(1px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+    filter: blur(0px);
+  }
+}
+
 .animate-fade-in-up {
   animation: fadeInUp 1s ease-out forwards;
 }
@@ -159,6 +178,14 @@ body {
 
 .animate-pulse {
   animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-hero-entrance {
+  animation: heroEntrance 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 /* Hover effects */
