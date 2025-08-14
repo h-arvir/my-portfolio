@@ -6,11 +6,14 @@ export default function Projects() {
   const projects = [
     {
       number: '01',
-      title: 'Portfolio Website',
-      description: 'A minimalist portfolio built with Next.js and Tailwind CSS, showcasing clean design principles and smooth animations.',
+      title: 'Qna Analysis',
+      description: 'A webapp made for last night of a real engineering student\'s study by dumping the previous exam Ques Papers',
       status: 'Live',
       tech: ['Next.js', 'Tailwind', 'React', 'Vercel'],
-      links: ['View', 'Code']
+      links: [
+        { label: 'View', url: 'YOUR_WEBAPP_URL_HERE' },
+        { label: 'Code', url: 'YOUR_GITHUB_REPO_URL_HERE' }
+      ]
     },
     {
       number: '02',
@@ -44,7 +47,16 @@ export default function Projects() {
   };
 
   const isLinkActive = (link) => {
-    return link === 'View' || link === 'Code';
+    if (typeof link === 'string') {
+      return link === 'View' || link === 'Code';
+    }
+    return link.url && link.url !== 'YOUR_WEBAPP_URL_HERE' && link.url !== 'YOUR_GITHUB_REPO_URL_HERE';
+  };
+
+  const handleLinkClick = (link) => {
+    if (typeof link === 'object' && link.url) {
+      window.open(link.url, '_blank');
+    }
   };
 
   return (
@@ -83,13 +95,14 @@ export default function Projects() {
                     ))}
                   </div>
                   <div className="project-links">
-                    {project.links.map((link) => (
+                    {project.links.map((link, linkIndex) => (
                       <button 
-                        key={link}
+                        key={typeof link === 'string' ? link : link.label}
                         className={`project-link ${isLinkActive(link) ? 'project-link-active' : 'project-link-inactive'}`}
                         disabled={!isLinkActive(link)}
+                        onClick={() => handleLinkClick(link)}
                       >
-                        {link}
+                        {typeof link === 'string' ? link : link.label}
                       </button>
                     ))}
                   </div>

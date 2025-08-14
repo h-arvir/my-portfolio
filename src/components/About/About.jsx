@@ -21,13 +21,15 @@ export default function About() {
             
             <div className="about-text">
               <p className="about-paragraph">
-                I'm a student with a passion for technology and continuous learning. 
-                My journey in tech spans across multiple domains, from creating engaging 
-                user interfaces to understanding cloud infrastructure.
+                - oi! i'm a student <br /> - in India <br />
+                - will passout in 2026 ( from university ) <br />
+                - like cloud and networking mostly ( and ai code completions ) <br />
+                - do freelancing <br />
+                - open to work <br />
               </p>
               <p className="about-paragraph">
                 Currently focusing on building practical skills in frontend development, 
-                exploring AWS cloud services, and understanding networking fundamentals.
+                exploring AWS cloud services, and understanding networking.
               </p>
             </div>
             
@@ -43,7 +45,7 @@ export default function About() {
                   <div className="skill-progress">
                     <div 
                       className="skill-progress-bar"
-                      style={{ width: `${(index + 1) * 20 + 20}%` }}
+                      style={{ width: "100% "}}
                     />
                   </div>
                 </div>
@@ -54,11 +56,11 @@ export default function About() {
           <div className="about-card-container fade-in-section">
             <div className="about-card">
               <div className="about-card-content">
-                <div className="about-card-icon">∞</div>
-                <p className="about-card-title">Always Learning</p>
+                <div className="about-card-icon">h</div>
+                <p className="about-card-title">How strange it is, to be anything at all</p>
                 <div className="about-card-divider" />
                 <p className="about-card-subtitle">
-                  Embracing the infinite journey of knowledge
+                  {/* i am removing this para for now */}
                 </p>
               </div>
             </div>
