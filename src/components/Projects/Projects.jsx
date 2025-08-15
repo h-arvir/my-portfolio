@@ -94,7 +94,7 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
-                  <div className="project-links">
+                  <div className="project-links cursor-target">
                     {project.links.map((link, linkIndex) => (
                       <button 
                         key={typeof link === 'string' ? link : link.label}

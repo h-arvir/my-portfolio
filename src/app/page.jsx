@@ -2,12 +2,13 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Navigation from '../components/Navigation/Navigation';
-import CursorFollower from '../components/CursorFollower/CursorFollower';
+// import CursorFollower from '../components/CursorFollower/CursorFollower';
 import Hero from '../components/Hero/Hero';
 import About from '../components/About/About';
 import Experience from '../components/Experience/Experience';
 import Projects from '../components/Projects/Projects';
 import Contact from '../components/Contact/Contact';
+import TargetCursor from '../components/cursor/target-cursor';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -79,7 +80,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white text-black relative overflow-hidden">
-      <CursorFollower mousePosition={mousePosition} activeSection={activeSection} />
+       <TargetCursor 
+        spinDuration={5}
+        hideDefaultCursor={true}
+      />
       <Navigation activeSection={activeSection} scrollToSection={scrollToSection} />
 
       <Hero isLoaded={isLoaded} scrollToSection={scrollToSection} />

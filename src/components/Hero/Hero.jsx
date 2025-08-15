@@ -14,7 +14,7 @@ export default function Hero({ isLoaded, scrollToSection }) {
       
       <div className="hero-content">
         <div className="hero-content-inner">
-          <h1 className={`hero-title ${isLoaded ? 'animate-hero-entrance' : ''}`}>
+          <h1 className={`hero-title ${isLoaded ? 'animate-hero-entrance' : ''} cursor-target`}>
             harvir
           </h1>
           

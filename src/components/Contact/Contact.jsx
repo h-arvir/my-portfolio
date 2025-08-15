@@ -61,7 +61,7 @@ export default function Contact() {
                   </p>
                   <a 
                     href={contact.link}
-                    className="contact-method-link"
+                    className="contact-method-link cursor-target"
                   >
                     {contact.contact}
                   </a>

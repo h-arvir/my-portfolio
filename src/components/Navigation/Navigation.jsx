@@ -35,14 +35,14 @@ export default function Navigation({ activeSection, scrollToSection }) {
 
   return (
     <nav className={`navigation ${isVisible ? 'navigation-visible' : 'navigation-hidden'}`}>
-      <div className="navigation-container">
+      <div className="navigation-container" >
         <div className="navigation-content">
-          <div className="navigation-logo">
+          <div className="navigation-logo cursor-target">
             HARVIR
           </div>
           <div className="navigation-menu">
             {navItems.map((section, index) => (
-              <div key={section} className="navigation-item">
+              <div key={section} className="navigation-item cursor-target">
                 <button
                   onClick={() => scrollToSection(section)}
                   className={`navigation-link ${
