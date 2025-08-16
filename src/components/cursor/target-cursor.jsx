@@ -216,6 +216,13 @@ const TargetCursor = ({
         });
       };
 
+      // Show corners when entering target
+      gsap.to(cornersRef.current, {
+        opacity: 1,
+        duration: 0.2,
+        ease: "power2.out"
+      });
+
       isAnimatingToTarget = true;
       updateCorners();
 
@@ -240,6 +247,13 @@ const TargetCursor = ({
         if (cornersRef.current) {
           const corners = Array.from(cornersRef.current);
           gsap.killTweensOf(corners);
+
+          // Hide corners when leaving target
+          gsap.to(cornersRef.current, {
+            opacity: 0,
+            duration: 0.2,
+            ease: "power2.out"
+          });
 
           const { cornerSize } = constants;
           const positions = [
