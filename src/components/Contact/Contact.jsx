@@ -8,22 +8,22 @@ export default function Contact() {
       icon: '◐',
       title: 'Email',
       subtitle: 'Drop me a line',
-      contact: 'harvir@example.com',
-      link: 'mailto:harvir@example.com'
+      contact: 'harvirr19@gmail.com',
+      link: 'mailto:harvirr19@gmail.com'
     },
     {
       icon: '◑',
       title: 'LinkedIn',
       subtitle: 'Let\'s connect',
       contact: 'Connect with me',
-      link: '#'
+      link: 'https://www.linkedin.com/in/harvir-singh-7579a021a'
     },
     {
       icon: '◒',
       title: 'GitHub',
       subtitle: 'View my code',
       contact: 'Follow my work',
-      link: '#'
+      link: 'https://github.com/h-arvir'
     }
   ];
 
@@ -74,16 +74,16 @@ export default function Contact() {
         <div className="contact-footer fade-in-section">
           <div className="contact-footer-content">
             <div className="contact-footer-left">
-              <div className="contact-footer-brand">HARVIR</div>
-              <div className="contact-footer-divider" />
+              <div className="contact-footer-brand">portfolio</div>
+              {/* <div className="contact-footer-divider" />
               <div className="contact-footer-year">
-                Portfolio 2024
-              </div>
+                Portfolio 2025 
+              </div> */}
             </div>
             <div className="contact-footer-right">
               <div className="geometric-dot contact-footer-dot" />
               <p className="contact-footer-copyright">
-                © 2024 All rights reserved
+                © {new Date().getFullYear()} Harvir Singh
               </p>
             </div>
           </div>
