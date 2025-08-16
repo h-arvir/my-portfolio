@@ -9,7 +9,7 @@ export default function Contact() {
       title: 'Email',
       subtitle: 'Drop me a line',
       contact: 'harvirr19@gmail.com',
-      link: 'mailto:harvirr19@gmail.com'
+      link: 'https://mail.google.com/mail/?view=cm&fs=1&to=harvirr19@gmail.com&su=Hello&body=I%20wanna%20hire%20you'
     },
     {
       icon: '◑',

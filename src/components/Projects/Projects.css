@@ -146,6 +146,7 @@
   line-height: 1.75;
   margin-bottom: 2.5rem;
   font-size: 0.875rem;
+  white-space: pre-line;
 }
 
 .project-tech {

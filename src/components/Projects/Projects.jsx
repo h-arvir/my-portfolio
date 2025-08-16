@@ -11,24 +11,26 @@ export default function Projects() {
       status: 'Live',
       tech: ['Vite', 'Tailwind', 'React', 'Vercel'],
       links: [
-        { label: 'View', url: 'https://qna-analysis.vercel.app/' },
-        { label: 'Code', url: 'https://github.com/h-arvir/QnA2' }
+        { label: 'View', url: 'https://h-arvir.github.io/paradox/' },
+        { label: 'Code', url: 'https://github.com/h-arvir/paradox' }
       ]
     },
     {
       number: '02',
-      title: 'Cloud Dashboard',
-      description: 'Currently working on exciting projects that combine frontend development with cloud technologies and real-time data.',
-      status: 'In Progress',
-      tech: ['React', 'AWS', 'Node.js', 'WebSocket'],
-      links: ['In Progress']
+      title: 'Paradox',
+      description: 'A retro-glitchy interface ai chatbot with 5 distinctive moods.\nWill add collaboration feature soon',
+      status: 'Live',
+      tech: ['React', 'tailwind', 'js', 'Gh pages'],
+      links: [
+        { label: 'View', url: 'https://qna-analysis.vercel.app/' },
+        { label: 'Code', url: 'https://github.com/h-arvir/QnA2' }]
     },
     {
       number: '03',
-      title: 'Network Monitor',
-      description: 'Planning to build applications that leverage AWS services and demonstrate networking concepts with visual interfaces.',
-      status: 'Planning',
-      tech: ['Python', 'AWS', 'D3.js', 'FastAPI'],
+      title: 'Koded Editor',
+      description: 'A Real time Collaborative session based Code editor with text, audio and video chat. Will be adding project management soon ',
+      status: 'Ongoing',
+      tech: ['React', 'AWS', 'Websocket', 'WebRTC'],
       links: ['Planning']
     }
   ];
