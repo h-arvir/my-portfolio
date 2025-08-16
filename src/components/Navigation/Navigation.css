@@ -215,6 +215,7 @@
 
 .navigation-mobile-link {
   font-size: clamp(1.5rem, 8vw, 3rem);
+  font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   background: transparent;
@@ -255,8 +256,7 @@
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-mobile-link:hover::after,
-.navigation-mobile-link-active::after {
+.navigation-mobile-link:hover::after {
   width: 80%;
 }
 
@@ -274,7 +274,7 @@
 }
 
 .navigation-mobile-link-active {
-  font-weight: 500;
+  font-weight: 200;
 }
 
 /* Hide mobile menu on desktop */
