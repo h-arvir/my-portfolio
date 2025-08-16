@@ -13,12 +13,18 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata = {
-  title: "Harvir - Minimalist Portfolio",
-  description: "Student & Aspiring Developer - Frontend Development, AWS Cloud Computing, Networking",
-  keywords: "portfolio, developer, frontend, AWS, cloud computing, networking, minimalist design",
+  title: "Harvir - Portfolio",
+  description:
+    "Student & Aspiring Developer - Frontend Development, AWS Cloud Computing, Networking",
+  keywords:
+    "portfolio, developer, frontend, AWS, cloud computing, networking, minimalist design",
   author: "Harvir",
-  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({ children }) {
