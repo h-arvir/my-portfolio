@@ -61,9 +61,9 @@ export default function Navigation({ activeSection, scrollToSection }) {
     <nav className={`navigation ${isVisible ? 'navigation-visible' : 'navigation-hidden'}`}>
       <div className="navigation-container">
         <div className="navigation-content">
-          <div className="navigation-logo">
+          <a href="/" className="navigation-logo">
             HARVIR
-          </div>
+          </a>
           <div className="navigation-menu">
             {navItems.map((section, index) => (
               <div key={section} className="navigation-item">
