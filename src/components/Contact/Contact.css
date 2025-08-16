@@ -169,14 +169,17 @@
 .contact-footer-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .contact-footer-content {
     flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
     gap: 0;
   }
 }
@@ -211,6 +214,14 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .contact-footer-right {
+    justify-content: flex-end;
+    
+  }
 }
 
 .contact-footer-dot {
@@ -224,4 +235,5 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-weight: 300;
+  margin-right: 50px;
 }
