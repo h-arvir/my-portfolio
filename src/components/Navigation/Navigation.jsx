@@ -80,15 +80,11 @@ export default function Navigation({ activeSection, scrollToSection }) {
           </div>
           <div className="navigation-mobile">
             <button 
-              className={`navigation-mobile-button ${isMobileMenuOpen ? 'navigation-mobile-button-open' : ''}`}
+              className="navigation-mobile-button"
               onClick={toggleMobileMenu}
               aria-label="Toggle mobile menu"
             >
-              <div className="navigation-mobile-icon">
-                <div className="navigation-mobile-line"></div>
-                <div className="navigation-mobile-line"></div>
-                <div className="navigation-mobile-line"></div>
-              </div>
+              menu
             </button>
           </div>
         </div>
@@ -102,10 +98,7 @@ export default function Navigation({ activeSection, scrollToSection }) {
           onClick={toggleMobileMenu}
           aria-label="Close mobile menu"
         >
-          <div className="navigation-mobile-close-icon">
-            <div className="navigation-mobile-close-line"></div>
-            <div className="navigation-mobile-close-line"></div>
-          </div>
+          close
         </button>
         
         <div className="navigation-mobile-menu-content">

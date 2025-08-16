@@ -120,6 +120,10 @@
   cursor: pointer;
   padding: 0.5rem;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #000000;
 }
 
 .navigation-mobile-button:hover {
@@ -135,48 +139,7 @@
   outline: none;
 }
 
-.navigation-mobile-icon {
-  width: 1.25rem;
-  height: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-}
-
-.navigation-mobile-line {
-  width: 100%;
-  height: 2px;
-  background: #000000;
-  border-radius: 1px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  transform-origin: center;
-}
-
-.navigation-mobile-line:nth-child(1) {
-  transform: translateY(0) rotate(0deg);
-}
-
-.navigation-mobile-line:nth-child(2) {
-  opacity: 1;
-}
-
-.navigation-mobile-line:nth-child(3) {
-  transform: translateY(0) rotate(0deg);
-}
-
-/* Hamburger animation when menu is open */
-.navigation-mobile-button-open .navigation-mobile-line:nth-child(1) {
-  transform: translateY(5px) rotate(45deg);
-}
-
-.navigation-mobile-button-open .navigation-mobile-line:nth-child(2) {
-  opacity: 0;
-}
-
-.navigation-mobile-button-open .navigation-mobile-line:nth-child(3) {
-  transform: translateY(-5px) rotate(-45deg);
-}
+/* Hamburger icon styles removed - now using text "menu" */
 
 /* Mobile Menu Overlay */
 .navigation-mobile-menu {
@@ -201,21 +164,25 @@
   overflow: hidden;
 }
 
-/* Close button inside mobile menu */
+/* Close button inside mobile menu - positioned at top left */
 .navigation-mobile-close {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 1.5rem;
+  right: 1.30rem;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 1rem;
   z-index: 40;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #000000;
 }
 
 .navigation-mobile-close:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .navigation-mobile-close:focus {
@@ -225,32 +192,6 @@
 
 .navigation-mobile-close:focus:not(:focus-visible) {
   outline: none;
-}
-
-.navigation-mobile-close-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navigation-mobile-close-line {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: #000000;
-  border-radius: 1px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navigation-mobile-close-line:nth-child(1) {
-  transform: rotate(45deg);
-}
-
-.navigation-mobile-close-line:nth-child(2) {
-  transform: rotate(-45deg);
 }
 
 .navigation-mobile-menu-open {
