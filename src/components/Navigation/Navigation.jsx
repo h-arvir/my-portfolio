@@ -7,8 +7,18 @@ export default function Navigation({ activeSection, scrollToSection }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
   const navItems = ['about', 'experience', 'projects', 'contact'];
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleMobileNavClick = (section) => {
+    scrollToSection(section);
+    setIsMobileMenuOpen(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,6 +43,20 @@ export default function Navigation({ activeSection, scrollToSection }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
+
   return (
     <nav className={`navigation ${isVisible ? 'navigation-visible' : 'navigation-hidden'}`}>
       <div className="navigation-container">
@@ -55,7 +79,11 @@ export default function Navigation({ activeSection, scrollToSection }) {
             ))}
           </div>
           <div className="navigation-mobile">
-            <button className="navigation-mobile-button">
+            <button 
+              className={`navigation-mobile-button ${isMobileMenuOpen ? 'navigation-mobile-button-open' : ''}`}
+              onClick={toggleMobileMenu}
+              aria-label="Toggle mobile menu"
+            >
               <div className="navigation-mobile-icon">
                 <div className="navigation-mobile-line"></div>
                 <div className="navigation-mobile-line"></div>
@@ -63,6 +91,36 @@ export default function Navigation({ activeSection, scrollToSection }) {
               </div>
             </button>
           </div>
+        </div>
+      </div>
+      
+      {/* Mobile Menu Overlay */}
+      <div className={`navigation-mobile-menu ${isMobileMenuOpen ? 'navigation-mobile-menu-open' : ''}`}>
+        {/* Close button inside mobile menu */}
+        <button 
+          className="navigation-mobile-close"
+          onClick={toggleMobileMenu}
+          aria-label="Close mobile menu"
+        >
+          <div className="navigation-mobile-close-icon">
+            <div className="navigation-mobile-close-line"></div>
+            <div className="navigation-mobile-close-line"></div>
+          </div>
+        </button>
+        
+        <div className="navigation-mobile-menu-content">
+          {navItems.map((section, index) => (
+            <button
+              key={section}
+              onClick={() => handleMobileNavClick(section)}
+              className={`navigation-mobile-link ${
+                activeSection === section ? 'navigation-mobile-link-active' : ''
+              }`}
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              {section}
+            </button>
+          ))}
         </div>
       </div>
     </nav>
