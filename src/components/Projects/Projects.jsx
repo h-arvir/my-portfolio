@@ -11,9 +11,9 @@ export default function Projects() {
       status: 'Live',
       tech: ['Vite', 'Tailwind', 'React', 'Vercel'],
       links: [
-        { label: 'View', url: 'https://h-arvir.github.io/paradox/' },
-        { label: 'Code', url: 'https://github.com/h-arvir/paradox' }
-      ]
+        { label: 'View', url: 'https://qna-analysis.vercel.app/' },
+        { label: 'Code', url: 'https://github.com/h-arvir/QnA2' }
+      ]   
     },
     {
       number: '02',
@@ -22,8 +22,8 @@ export default function Projects() {
       status: 'Live',
       tech: ['React', 'tailwind', 'js', 'Gh pages'],
       links: [
-        { label: 'View', url: 'https://qna-analysis.vercel.app/' },
-        { label: 'Code', url: 'https://github.com/h-arvir/QnA2' }]
+        { label: 'View', url: 'https://h-arvir.github.io/paradox/' },
+        { label: 'Code', url: 'https://github.com/h-arvir/paradox' }]
     },
     {
       number: '03',
