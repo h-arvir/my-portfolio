@@ -27,7 +27,7 @@ export default function Projects() {
     },
     {
       number: '03',
-      title: 'Koded Editor',
+      title: 'Kodek Editor',
       description: 'A Real time Collaborative session based Code editor with text, audio and video chat. Will be adding project management soon ',
       status: 'Ongoing',
       tech: ['React', 'AWS', 'Websocket', 'WebRTC'],
