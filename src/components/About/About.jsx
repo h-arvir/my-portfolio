@@ -21,11 +21,12 @@ export default function About() {
             
             <div className="about-text">
               <p className="about-paragraph">
-                - oi! i'm a student <br /> - in India <br />
-                - will passout in 2026 ( from university ) <br />
-                - like cloud and networking mostly ( and ai code completions ) <br />
-                - do freelancing <br />
-                - open to work <br />
+                - I'm a student <br /> 
+                - In India <br />
+                - Will passout in 2026 ( from university ) <br />
+                - I like cloud and networking mostly ( and ai code completions ) <br />
+                - Do freelancing <br />
+                - Open to work <br />
               </p>
               <p className="about-paragraph">
                 Currently focusing on building practical skills in frontend development, 
